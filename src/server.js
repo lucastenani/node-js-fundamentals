@@ -12,12 +12,16 @@ const server = http.createServer((request, response) => {
   }
 
   if (method === "POST" && url === "/users") {
-    users.push({ id: 1, name: "John Doe", email: "john.doe@example.com" });
+    users.push({
+      id: 1,
+      name: "John Doe",
+      email: "john.doe@example.com",
+    });
 
-    return response.end("User created");
+    return response.writeHead(201).end();
   }
 
-  return response.end("Hello, World!");
+  return response.writeHead(404).end();
 });
 
 server.listen(3333);
