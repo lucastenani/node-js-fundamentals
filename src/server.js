@@ -27,10 +27,10 @@ const server = http.createServer((req, res) => {
       email: 'john.doe@example.com',
     })
 
-    return res.end('Created user')
+    return res.writeHead(201).end()
   }
 
-  return res.end('Hello, World!')
+  return res.writeHead(404).end()
 })
 
 server.listen(3333) // localhost:3333
