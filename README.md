@@ -9,7 +9,7 @@ To run the server locally, follow these steps:
 1. Clone the project repository:
 
 ```
-git clone https://github.com/your-username/node-js-fundamentals.git
+git clone https://github.com/lucastenani/node-js-fundamentals.git
 ```
 
 2. Navigate to the project folder:
