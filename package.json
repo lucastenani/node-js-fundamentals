@@ -5,7 +5,7 @@
   "description": "Welcome to the Node.js Fundamentals project documentation. This project serves as a practical exploration of fundamental Node.js concepts by building a basic API that allows you to create, list, update, and delete users. The project emphasizes utilizing core Node.js features, minimizing third-party dependencies, and leveraging native Node.js modules to accomplish these tasks.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "node --watch src/server.js"
   },
   "keywords": [],
   "author": "",
