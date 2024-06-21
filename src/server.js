@@ -7,6 +7,7 @@
 // PATCH - Update unique information about a resource
 // DELETE - Delete a resource
 
+import { randomUUID } from 'node:crypto'
 import http from 'node:http'
 
 import { Database } from './database.js'
@@ -28,8 +29,10 @@ const server = http.createServer(async (req, res) => {
 
   if (method === 'POST' && url === '/users') {
     const { name, email } = req.body
+    const id = randomUUID()
+
     const user = {
-      id: 1,
+      id,
       name,
       email,
     }
