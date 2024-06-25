@@ -47,17 +47,17 @@ The project follows a structured layout to maintain clarity and modularity:
 
 ## API Endpoints
 
-<!-- ### Get All Users
+### Get All Users
 
 - **Endpoint:** `GET http://localhost:3333/users`
 - **Description:** Retrieve a list of all users.
-- **Response:** An array of user objects.
+
 
 ### Search Users
 
 - **Endpoint:** `GET http://localhost:3333/users?search=query`
 - **Description:** Search for users by name or email using the provided query parameter.
-- **Response:** An array of user objects that match the search criteria.
+
 
 ### Create User
 
@@ -72,7 +72,7 @@ The project follows a structured layout to maintain clarity and modularity:
   }
   ```
 
-  - **Response:** The created user object.
+  
 
   ### Update User
 
@@ -87,18 +87,18 @@ The project follows a structured layout to maintain clarity and modularity:
   }
   ```
 
-- **Response:** The created user object.
+
 
 ### Delete User
 
 - **Endpoint:** `DELETE http://localhost:3333/users/:id`
 - **Description:** Delete the user with the specified `id`.
-- **Response:** A success message indicating the deletion.
 
-## Delete User
+
+## Database
 
 User data is stored in a physical file named `db.json` using the `database.js` module. This approach ensures data is not lost between server restarts.
- -->
+
 
 ## License
 
